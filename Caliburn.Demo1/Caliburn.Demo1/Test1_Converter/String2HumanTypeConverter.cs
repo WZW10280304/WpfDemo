@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Globalization;
 
-namespace Caliburn.Demo1.Test1
+namespace Caliburn.Demo1.Test1_Converter
 {
     public class String2HumanTypeConverter : TypeConverter
     {

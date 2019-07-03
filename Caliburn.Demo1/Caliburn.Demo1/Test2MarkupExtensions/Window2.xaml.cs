@@ -11,23 +11,16 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace Caliburn.Demo1.Test1
+namespace Caliburn.Demo1.Test2MarkupExtensions
 {
     /// <summary>
-    /// Interaction logic for Window1.xaml
+    /// Interaction logic for Window2.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class Window2 : Window
     {
-        public Window1()
+        public Window2()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Human h = (Human) this.FindResource("human");
-
-            MessageBox.Show(h.Child.Name);
         }
     }
 }

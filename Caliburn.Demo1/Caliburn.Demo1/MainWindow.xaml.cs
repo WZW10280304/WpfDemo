@@ -11,6 +11,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Caliburn.Demo1.Test1_Converter;
+using Caliburn.Demo1.Test2MarkupExtensions;
 
 namespace Caliburn.Demo1
 {
@@ -22,6 +24,18 @@ namespace Caliburn.Demo1
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 w = new Window1();
+            w.Show();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Window2 w = new Window2();
+            w.Show();
         }
     }
 }
