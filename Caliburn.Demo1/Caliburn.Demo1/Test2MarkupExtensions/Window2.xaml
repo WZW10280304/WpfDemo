@@ -4,9 +4,14 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Caliburn.Demo1.Test2MarkupExtensions"
+        xmlns:system="clr-namespace:System;assembly=mscorlib"
         mc:Ignorable="d"
         Title="Window2" Height="450" Width="800">
+    <Window.Resources>
+        <system:String x:Key="MyString">hello resource</system:String>
+    </Window.Resources>
     <StackPanel Background="LightSlateGray">
+        <TextBox Text="{StaticResource ResourceKey=MyString}"></TextBox>
         <TextBox Text="{Binding ElementName=Slider1,Path=Value,Mode=OneWay}"></TextBox>
         <Slider x:Name="Slider1" Margin="5"></Slider>
     </StackPanel>
