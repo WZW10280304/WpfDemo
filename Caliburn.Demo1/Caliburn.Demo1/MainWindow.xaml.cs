@@ -13,6 +13,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Caliburn.Demo1.Test1_Converter;
 using Caliburn.Demo1.Test2MarkupExtensions;
+using Caliburn.Demo1.Test3StyleAndArray;
 
 namespace Caliburn.Demo1
 {
@@ -35,6 +36,12 @@ namespace Caliburn.Demo1
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             Window2 w = new Window2();
+            w.Show();
+        }
+
+        private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
+        {
+            Window3 w = new Window3();
             w.Show();
         }
     }
