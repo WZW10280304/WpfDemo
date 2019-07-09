@@ -53,6 +53,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Demo1CustomControl\ButtonEx.cs" />
+    <Compile Include="Demo1CustomControl\Demo1.xaml.cs">
+      <DependentUpon>Demo1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Test1_Converter\Human.cs" />
     <Compile Include="Test1_Converter\String2HumanTypeConverter.cs" />
     <Compile Include="Test1_Converter\Window1.xaml.cs">
@@ -64,6 +68,14 @@
     <Compile Include="Test3StyleAndArray\Window3.xaml.cs">
       <DependentUpon>Window3.xaml</DependentUpon>
     </Compile>
+    <Page Include="Demo1CustomControl\Demo1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demo1CustomControl\Styles\BtnInfoStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -87,6 +99,10 @@
     <Page Include="Test3StyleAndArray\Window3.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>

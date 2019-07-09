@@ -44,5 +44,11 @@ namespace Caliburn.Demo1
             Window3 w = new Window3();
             w.Show();
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Demo1CustomControl.Demo1 d=new Demo1CustomControl.Demo1();
+            d.Show();
+        }
     }
 }
