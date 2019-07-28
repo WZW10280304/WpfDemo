@@ -54,10 +54,25 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="demo2\Car.cs" />
+    <Compile Include="demo2\CarDetailView.xaml.cs">
+      <DependentUpon>CarDetailView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="demo2\CarListItemView.xaml.cs">
       <DependentUpon>CarListItemView.xaml</DependentUpon>
     </Compile>
     <Page Include="Demo1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="demo2\CarDetailView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="demo2\Demo2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="demo3\Demo3.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -72,6 +87,13 @@
     <Compile Include="Demo1.xaml.cs">
       <DependentUpon>Demo1.xaml</DependentUpon>
     </Compile>
+    <Compile Include="demo2\Demo2.xaml.cs">
+      <DependentUpon>Demo2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="demo3\Demo3.xaml.cs">
+      <DependentUpon>Demo3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="demo3\MyConverters.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -105,10 +127,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\car1.jpg" />
-    <Resource Include="Images\car2.jpg" />
-    <Resource Include="Images\car3.jpg" />
-    <Resource Include="Images\car4.jpg" />
+    <Resource Include="Resources\Images\car1.jpg" />
+    <Resource Include="Resources\Images\car2.jpg" />
+    <Resource Include="Resources\Images\car3.jpg" />
+    <Resource Include="Resources\Images\car4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Logos\logo.jpg" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

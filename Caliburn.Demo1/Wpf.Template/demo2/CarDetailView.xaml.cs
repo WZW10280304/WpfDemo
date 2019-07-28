@@ -11,16 +11,15 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Wpf.Template.demo2;
 
-namespace Wpf.Template
+namespace Wpf.Template.demo2
 {
     /// <summary>
-    /// UserControl1.xaml 的交互逻辑
+    /// CarDetailView.xaml 的交互逻辑
     /// </summary>
-    public partial class CarListItemView : UserControl
+    public partial class CarDetailView : UserControl
     {
-        public CarListItemView()
+        public CarDetailView()
         {
             InitializeComponent();
         }
@@ -34,8 +33,10 @@ namespace Wpf.Template
                 _car = value;
                 this.txtName.Text = _car.Name;
                 this.txtYear.Text = _car.Year;
-                var uriStr = string.Format(@"/Resources/Logos/{0}.jpg", _car.AutoMaker);
-                this.imageLogo.Source = new BitmapImage(new Uri(uriStr, UriKind.Relative));
+                this.txtTopSpeed.Text = _car.TopSpeed;
+                this.txtAutoMaker.Text = _car.AutoMaker;
+                var uriStr = string.Format(@"/Resources/Images/{0}.jpg", _car.Name);
+                this.imgPhote.Source = new BitmapImage(new Uri(uriStr, UriKind.Relative));
             }
         }
     }

@@ -11,6 +11,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Wpf.Template.demo2;
+using Wpf.Template.demo3;
 
 namespace Wpf.Template
 {
@@ -26,7 +28,19 @@ namespace Wpf.Template
 
         private void BtnDemo1_Click(object sender, RoutedEventArgs e)
         {
-            Demo1 d = new Demo1();
+            var d = new Demo1();
+            d.Show();
+        }
+
+        private void BtnDemo2_Click(object sender, RoutedEventArgs e)
+        {
+            var d = new Demo2();
+            d.Show();
+        }
+
+        private void BtnDemo3_Click(object sender, RoutedEventArgs e)
+        {
+            var d = new Demo3();
             d.Show();
         }
     }
