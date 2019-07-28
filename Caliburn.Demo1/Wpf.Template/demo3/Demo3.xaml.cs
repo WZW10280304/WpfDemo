@@ -10,6 +10,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Wpf.Template.demo2;
 
 namespace Wpf.Template.demo3
 {
@@ -21,6 +22,20 @@ namespace Wpf.Template.demo3
         public Demo3()
         {
             InitializeComponent();
+
+            InitCars();
+        }
+
+        public void InitCars()
+        {
+            var list = new List<Car>();
+
+            list.Add(new Car { AutoMaker = "logo", Name = "car1", Year = "1920", TopSpeed = "190" });
+            list.Add(new Car { AutoMaker = "logo", Name = "car2", Year = "1950", TopSpeed = "220" });
+            list.Add(new Car { AutoMaker = "logo", Name = "car3", Year = "1970", TopSpeed = "270" });
+            list.Add(new Car { AutoMaker = "logo", Name = "car4", Year = "1990", TopSpeed = "320" });
+
+            listBoxCars.ItemsSource = list;
         }
     }
 }

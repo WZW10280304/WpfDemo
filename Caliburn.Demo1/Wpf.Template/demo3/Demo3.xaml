@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wpf.Template.demo3"
         mc:Ignorable="d"
-        Title="Demo3" Height="350" Width="623">
+        Title="Demo3" Height="400" Width="700">
     <Window.Resources>
         <local:AutoMakerToLogoPathConverter x:Key="a2l"/>
         <local:NameToPhotoPathConverter x:Key="n2p"/>
@@ -30,7 +30,7 @@
         </DataTemplate>
         <DataTemplate x:Key="carListViewTemplate">
             <Grid Margin="2">
-                <StackPanel Margin="2">
+                <StackPanel Margin="2" Orientation="Horizontal">
                     <Image Width="64" Height="64" Grid.RowSpan="3" Source="{Binding AutoMaker,Converter={StaticResource a2l}}"/>
                     <StackPanel Margin="5,10">
                         <TextBlock Text="{Binding Name}" FontSize="16" FontWeight="Bold"/>
@@ -41,7 +41,7 @@
         </DataTemplate>
     </Window.Resources>
     <StackPanel Orientation="Horizontal" Margin="5">
-        <UserControl ContentTemplate="{StaticResource carDetailViewTemplate}" Content="{Binding SelectItem,ElementName=listBoxCars}"/>
-        <ListBox x:Name="listBoxCars" ItemTemplate="{StaticResource carListViewTemplate}" Width="180" Margin="5,0"/>
+        <UserControl ContentTemplate="{StaticResource carDetailViewTemplate}" Content="{Binding SelectedItem,ElementName=listBoxCars}"/>
+        <ListBox x:Name="listBoxCars" ItemTemplate="{StaticResource carListViewTemplate}" Width="250" Margin="5,0"/>
     </StackPanel>
 </Window>

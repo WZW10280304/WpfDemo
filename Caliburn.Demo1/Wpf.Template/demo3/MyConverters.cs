@@ -26,7 +26,7 @@ namespace Wpf.Template.demo3
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            return new BitmapImage(new Uri($"", UriKind.Relative));
+            return new BitmapImage(new Uri($"/Resources/Images/{value}.jpg", UriKind.Relative));
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
