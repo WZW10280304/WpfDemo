@@ -14,6 +14,7 @@ using System.Windows.Shapes;
 using Caliburn.Demo1.Test1_Converter;
 using Caliburn.Demo1.Test2MarkupExtensions;
 using Caliburn.Demo1.Test3StyleAndArray;
+using Caliburn.Demo1.Test4;
 
 namespace Caliburn.Demo1
 {
@@ -49,6 +50,12 @@ namespace Caliburn.Demo1
         {
             Demo1CustomControl.Demo1 d=new Demo1CustomControl.Demo1();
             d.Show();
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            Window4 w = new Window4();
+            w.Show();
         }
     }
 }
