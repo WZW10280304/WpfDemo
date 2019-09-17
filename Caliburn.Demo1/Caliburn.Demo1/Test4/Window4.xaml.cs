@@ -30,11 +30,11 @@ namespace Caliburn.Demo1.Test4
         private void Window4_Loaded(object sender, RoutedEventArgs e)
         {
 
-            List.Add(new Users { Name = "n1" });
-            List.Add(new Users { Name = "n2" });
-            List.Add(new Users { Name = "n3" });
-            List.Add(new Users { Name = "n4" });
-            List.Add(new Users { Name = "n5" });
+            List.Add(new Users { Name = "1、杰拉德" });
+            List.Add(new Users { Name = "2、巴蒂斯图塔" });
+            List.Add(new Users { Name = "3、舍甫琴科" });
+            List.Add(new Users { Name = "4、亨利" });
+            List.Add(new Users { Name = "5、罗纳尔迪尼奥" });
 
             this.DataContext = List;
         }
@@ -51,7 +51,7 @@ namespace Caliburn.Demo1.Test4
 
         private bool Execute()
         {
-            MessageBox.Show(Name);
+            MessageBox.Show("您选择了："+Name);
             return true;
         }
 
