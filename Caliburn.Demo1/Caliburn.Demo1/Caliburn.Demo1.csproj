@@ -71,7 +71,9 @@
     <Compile Include="Test4\Window4.xaml.cs">
       <DependentUpon>Window4.xaml</DependentUpon>
     </Compile>
-    <Resource Include="Test4\config.xml" />
+    <Resource Include="Test4\config.xml">
+      <SubType>Designer</SubType>
+    </Resource>
     <Page Include="Demo1CustomControl\Demo1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
