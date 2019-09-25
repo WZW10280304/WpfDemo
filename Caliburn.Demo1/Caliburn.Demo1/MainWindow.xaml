@@ -5,13 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Caliburn.Demo1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="800">
+        Title="MainWindow" Height="600" Width="850">
     <Grid>
-        <Button Content="1.TypeConverter" HorizontalAlignment="Left" Margin="35,20,0,0" VerticalAlignment="Top" Width="119" Height="31" Click="Button_Click"/>
-        <Button Content="2.MarkupExtensions" HorizontalAlignment="Left" Margin="180,20,0,0" VerticalAlignment="Top" Width="119" Height="31" Click="Button_Click_1"/>
-        <Button Content="3.Style" Click="ButtonBase_OnClick" HorizontalAlignment="Left" Margin="325,20,0,0" VerticalAlignment="Top" Width="105" Height="31"/>
-        <Button Content="4.CustomControl" HorizontalAlignment="Left" Margin="35,77,0,0" VerticalAlignment="Top" Width="119" Height="33" Click="Button_Click_2"/>
-        <Button Content="Test4" HorizontalAlignment="Left" Margin="180,77,0,0" VerticalAlignment="Top" Width="119" Height="33" Click="Button_Click_3"/>
+        <Button Content="1.TypeConverter" HorizontalAlignment="Left" Margin="30,20,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="Button_Click"/>
+        <Button Content="2.MarkupExtensions" HorizontalAlignment="Left" Margin="160,20,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="Button_Click_1"/>
+        <Button Content="3.Style" Click="ButtonBase_OnClick" HorizontalAlignment="Left" Margin="290,20,0,0" VerticalAlignment="Top" Width="120" Height="30"/>
+        <Button Content="4.CustomControl" HorizontalAlignment="Left" Margin="420,20,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="Button_Click_2"/>
+        <Button Content="4.Test4" HorizontalAlignment="Left" Margin="550,20,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="Button_Click_3"/>
+        <Button Content="5.Test5" HorizontalAlignment="Left" Margin="680,20,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="Button_Click_4"/>
 
+        <Button Content="6.Test6Drawing" HorizontalAlignment="Left" Margin="30,70,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="Button_Click_5"/>
+        <Button Content="7." HorizontalAlignment="Left" Margin="160,70,0,0" VerticalAlignment="Top" Width="120" Height="30"/>
+        <Button Content="8." HorizontalAlignment="Left" Margin="290,70,0,0" VerticalAlignment="Top" Width="120" Height="30"/>
+        <Button Content="9." HorizontalAlignment="Left" Margin="420,70,0,0" VerticalAlignment="Top" Width="120" Height="30"/>
+        <Button Content="10." HorizontalAlignment="Left" Margin="550,70,0,0" VerticalAlignment="Top" Width="120" Height="30"/>
+        <Button Content="11." HorizontalAlignment="Left" Margin="680,70,0,0" VerticalAlignment="Top" Width="120" Height="30"/>
+
+        <Button Content="12." HorizontalAlignment="Left" Margin="30,120,0,0" VerticalAlignment="Top" Width="120" Height="30"/>
+        <Button Content="13." HorizontalAlignment="Left" Margin="160,120,0,0" VerticalAlignment="Top" Width="120" Height="30"/>
+        <Button Content="14." HorizontalAlignment="Left" Margin="290,120,0,0" VerticalAlignment="Top" Width="120" Height="30"/>
+        <Button Content="15." HorizontalAlignment="Left" Margin="420,120,0,0" VerticalAlignment="Top" Width="120" Height="30"/>
+        <Button Content="16." HorizontalAlignment="Left" Margin="550,120,0,0" VerticalAlignment="Top" Width="120" Height="30"/>
+        <Button Content="17." HorizontalAlignment="Left" Margin="680,120,0,0" VerticalAlignment="Top" Width="120" Height="30"/>
+
+        <Button Content="18." HorizontalAlignment="Left" Margin="30,170,0,0" VerticalAlignment="Top" Width="120" Height="30"/>
+        <Button Content="19." HorizontalAlignment="Left" Margin="160,170,0,0" VerticalAlignment="Top" Width="120" Height="30"/>
+        <Button Content="20." HorizontalAlignment="Left" Margin="290,170,0,0" VerticalAlignment="Top" Width="120" Height="30"/>
+        <Button Content="21." HorizontalAlignment="Left" Margin="420,170,0,0" VerticalAlignment="Top" Width="120" Height="30"/>
+        <Button Content="22." HorizontalAlignment="Left" Margin="550,170,0,0" VerticalAlignment="Top" Width="120" Height="30"/>
+        <Button Content="23." HorizontalAlignment="Left" Margin="680,170,0,0" VerticalAlignment="Top" Width="120" Height="30"/>
     </Grid>
 </Window>

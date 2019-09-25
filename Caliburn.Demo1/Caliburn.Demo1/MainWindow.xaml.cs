@@ -15,6 +15,8 @@ using Caliburn.Demo1.Test1_Converter;
 using Caliburn.Demo1.Test2MarkupExtensions;
 using Caliburn.Demo1.Test3StyleAndArray;
 using Caliburn.Demo1.Test4;
+using Caliburn.Demo1.Test5;
+using Caliburn.Demo1.Test6Drawing;
 
 namespace Caliburn.Demo1
 {
@@ -56,6 +58,20 @@ namespace Caliburn.Demo1
         {
             Window4 w = new Window4();
             w.Show();
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            var w = new Window5();
+            w.Show();
+            var w2 = new Window5B();
+            w2.Show();
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            var win = new WindowDrawing();
+            win.Show();
         }
     }
 }

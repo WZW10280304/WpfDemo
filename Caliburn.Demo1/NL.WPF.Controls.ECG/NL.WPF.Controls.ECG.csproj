@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C779DCE3-0515-4A3B-B93E-A9BA44B7ABEF}</ProjectGuid>
+    <ProjectGuid>{795C27E7-6FF7-493F-859B-5D1D8A950CB1}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Caliburn.Demo1</RootNamespace>
-    <AssemblyName>Caliburn.Demo1</AssemblyName>
+    <RootNamespace>NL.WPF.Controls.ECG</RootNamespace>
+    <AssemblyName>NL.WPF.Controls.ECG</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -53,44 +53,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Demo1CustomControl\ButtonEx.cs" />
-    <Compile Include="Demo1CustomControl\Demo1.xaml.cs">
-      <DependentUpon>Demo1.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Test1_Converter\Human.cs" />
-    <Compile Include="Test1_Converter\String2HumanTypeConverter.cs" />
-    <Compile Include="Test1_Converter\Window1.xaml.cs">
-      <DependentUpon>Window1.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Test2MarkupExtensions\Window2.xaml.cs">
-      <DependentUpon>Window2.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Test3StyleAndArray\Window3.xaml.cs">
-      <DependentUpon>Window3.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Test4\Window4.xaml.cs">
-      <DependentUpon>Window4.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Test5\Window5.xaml.cs">
-      <DependentUpon>Window5.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Test5\Window5B.xaml.cs">
-      <DependentUpon>Window5B.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Test6Drawing\WindowDrawing.xaml.cs">
-      <DependentUpon>WindowDrawing.xaml</DependentUpon>
-    </Compile>
-    <Resource Include="Test4\config.xml">
-      <SubType>Designer</SubType>
-    </Resource>
-    <Page Include="Demo1CustomControl\Demo1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Demo1CustomControl\Styles\BtnInfoStyle.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -103,38 +65,6 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Test1_Converter\Window1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Test2MarkupExtensions\Window2.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Test3StyleAndArray\Window3.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Test4\Window4.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Test5\Window5.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Test5\Window5B.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Test6Drawing\WindowDrawing.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Themes\Generic.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -159,6 +89,5 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

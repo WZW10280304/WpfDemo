@@ -5,7 +5,13 @@
              xmlns:system="clr-namespace:System;assembly=mscorlib"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-
-        <system:Object x:Key="data" />
+        <system:Object x:Key="ButtonFocusVisual" />
+        <Color x:Key="ControlMouseOverColor" R="78" G="56" B="211"/>
+        <Color x:Key="ControlPressedColor"  R="78" G="56" B="211" />
+        <Color x:Key="PressedBorderDarkColor"  R="78" G="56" B="211"/>
+        <Color x:Key="PressedBorderLightColor"  R="78" G="56" B="211"/>
+        <Color x:Key="DisabledControlDarkColor"  R="78" G="56" B="211"/>
+        <Color x:Key="DisabledForegroundColor"  R="78" G="56" B="211"/>
+        <Color x:Key="DisabledBorderDarkColor"  R="78" G="56" B="211"/>
     </Application.Resources>
 </Application>
